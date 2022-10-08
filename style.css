@@ -1,0 +1,101 @@
+/* IMPORT STATEMENTS */
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    color: red;
+    background-color: black;
+}
+
+/* Code for Header */
+header{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B2E4A;
+    color: whitesmoke;
+    font-size: 4vw;
+    position: sticky;
+    top: 0;
+    font-family: Caveat , sans-serif;
+    border-bottom: 0.1vh solid whitesmoke;
+    box-shadow: 1px 1px 15px darkslategray;
+    z-index: 1;
+}
+
+#main-div{
+    background-color: #FFF5E4;
+    padding: 3vh;
+    gap: 4vh;
+}
+
+.sub-div{
+    margin: 5vh 0;
+    padding: 1vh 1vw;
+    border: 0.1vw solid black;
+    border-top: none;
+    border-right: none;
+    font-family: 'Rajdhani', sans-serif;
+    overflow-x: auto;
+}
+
+.sub-div > table{
+    font-size: 1.8vw;
+}
+
+.name:hover::after{
+    content: "click to expand";
+    font-family: sans-serif;
+    font-size: 1.25vw;
+    position:absolute;
+    background-color: darkslateblue;
+    color: whitesmoke;
+    margin: 1vh;
+    padding: 0.5vh 0.5vw;
+    border: 1px solid black;
+    border-radius: 0.25vw;
+    z-index: 0;
+}
+
+.name{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 3vw;
+    margin-bottom: 2vh;
+}
+
+/* Code for footer */
+footer{
+    height: 5vh;
+    background-color: #FF884B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arial;
+    border-top: 00.1vh solid black;
+}
+
+footer > a{
+    text-decoration: none;
+    color: black;
+    transition: all 200ms ease-in;
+}
+
+footer > a:hover {
+    text-decoration : underline;
+    color: blue;
+}
+
+/* Code for error */
+.error{
+    font-size: 7.5vw;
+    font-family: Caveat , sans-serif;
+    height: 74vh;
+}
